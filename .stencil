@@ -1,0 +1,11 @@
+{
+  "normalStoreUrl": "https://branddux-sandbox.mybigcommerce.com",
+  "accessToken": "pl8ii30x4xkt9xwrongjkm9ujotxsz",
+  "port": 3000,
+  "customLayouts": {
+    "brand": {},
+    "category": {},
+    "page": {},
+    "product": {}
+  }
+}

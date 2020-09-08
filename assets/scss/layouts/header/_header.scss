@@ -268,3 +268,15 @@
 
     }
 }
+
+//Promo bar
+.promo-bar {
+    background-color: #000000;
+    padding: 10px 0;
+    > p {
+        color: white;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+}
