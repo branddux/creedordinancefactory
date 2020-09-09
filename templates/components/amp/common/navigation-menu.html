@@ -20,19 +20,7 @@
                     {{lang 'common.currency' code=currency_selector.active_currency_code}} <span class="icon navPages-action-moreIcon" aria-hidden="true"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-chevron-down"></use></svg></span>
                 </a>
                 <div class="navPage-subMenu" id="navPages-currency" aria-hidden="true" tabindex="-1">
-                    <ul class="navPage-subMenu-list">
-                        {{#each currency_selector.currencies}}
-                        <li class="navPage-subMenu-item">
-                            <a class="navPage-subMenu-action navPages-action" href="{{{switch_url}}}">
-                                {{#if is_active}}
-                                    <strong>{{name}}</strong>
-                                {{else}}
-                                    {{name}}
-                                {{/if}}
-                            </a>
-                        </li>
-                        {{/each}}
-                    </ul>
+                    
                 </div>
             </li>
         {{/if}}

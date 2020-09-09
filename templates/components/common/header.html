@@ -1,4 +1,3 @@
-<a href="#main-content" class="skip-to-main-link">{{lang 'header.skip_to_main'}}</a>
 {{#if banners.top}}
 <div class="banners" data-banner-location="top">
     {{#each (limit banners.top_metadata 1)}}
@@ -14,12 +13,11 @@
     <a href="#" class="mobileMenu-toggle" data-mobile-menu-toggle="menu">
         <span class="mobileMenu-toggleIcon">Toggle menu</span>
     </a>
-    {{> components/common/navigation}}
-
+    
     {{#if page_type '===' 'default'}}
-        <h1 class="header-logo header-logo--{{theme_settings.logo-position}}">
+        <div class="header-logo header-logo--{{theme_settings.logo-position}}">
             {{> components/common/store-logo}}
-        </h1>
+        </div>
     {{else}}
         <div class="header-logo header-logo--{{theme_settings.logo-position}}">
             {{> components/common/store-logo}}
