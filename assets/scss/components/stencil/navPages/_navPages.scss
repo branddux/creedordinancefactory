@@ -48,7 +48,7 @@
     z-index: zIndex("lower");
 
     @include breakpoint("medium") {
-        background: transparent;
+        background: #000000;
         display: block;
         height: auto;
         padding: 0;
@@ -186,9 +186,8 @@
 }
 
 .navPages-action {
-    color: stencilColor("navPages-color");
+    color: #ffffff;
     display: block;
-    font-size: fontSize("smaller");
     font-weight: fontWeight("bold");
     padding: spacing("half") 0;
     text-decoration: none;

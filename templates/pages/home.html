@@ -26,6 +26,9 @@ blog:
     {{/each}}
 
 <div class="main full">
+
+    {{> components/common/sections/category-section}}
+    
     {{#if products.featured}}
         {{> components/products/featured products=products.featured columns=theme_settings.homepage_featured_products_column_count}}
     {{/if}}
