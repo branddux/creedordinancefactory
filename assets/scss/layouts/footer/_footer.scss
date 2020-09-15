@@ -35,7 +35,7 @@
 
 .footer-info-col {
     @include grid-column(12);
-    color: stencilColor("color-textSecondary");
+    color: #ffffff;
     display: inline-block;
     float: none;
     font-size: fontSize("base"); // 2
@@ -65,7 +65,7 @@
 
 .footer-info-col--small {
     @include breakpoint("medium") {
-        width: width("2/12");
+        width: width("3/12");
     }
 }
 
@@ -99,7 +99,7 @@
 // -----------------------------------------------------------------------------
 
 .footer-info-heading {
-    color: $footer-heading-fontColor;
+    color: #ffffff;
     font-size: fontSize("base");
     text-transform: inherit;
 }
@@ -109,7 +109,7 @@
     margin-left: 0;
 
     a {
-        color: stencilColor("color-textSecondary");
+        color: #ffffff;
         text-decoration: none;
 
         // scss-lint:disable NestingDepth
@@ -131,6 +131,7 @@
         color: stencilColor("color-textSecondary");
         font-size: fontSize("tiny");
         margin: 0;
+        text-align: center;
     }
 
     a {

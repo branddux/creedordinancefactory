@@ -27,7 +27,12 @@
 
         {{ getFontsCollection }}
         {{{stylesheet '/assets/css/theme.css'}}}
-
+        <style type="text/css" media="sreen, print">
+            @font-face {
+                font-family: "Mechfire";
+                src: url('{{cdn 'fonts/Mechfire.otf'}}')
+            }
+        </style>
         {{{head.scripts}}}
 
         {{~inject 'showAdminBar' theme_settings.show-admin-bar}}

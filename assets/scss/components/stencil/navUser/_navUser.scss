@@ -25,12 +25,9 @@
     z-index: zIndex("lowest"); // 5.
 
     @include breakpoint("medium") {
+        display: inline;
         padding: 0 spacing("single");
-        position: relative;
-        right: auto;
-        top: auto;
         transform: none;
-        z-index: zIndex("high");
     }
 
     .dropdown-menu {

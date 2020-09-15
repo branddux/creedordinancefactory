@@ -5,21 +5,63 @@
         margin-bottom: 30px;
         text-transform: uppercase;
     }
-    .title {
-        font-size: 32px;
-        font-weight: 700;
-        color: #ffffff;
+    .image-content {
+        position: relative;
+        margin: 0 auto;
+        transition: transform 0.5s;
+        @media (max-width: $screen-small) {
+            margin-bottom: 20px;
+        }
+        &:hover {
+            transform: scale(1.1);
+        }
+        img {
+            vertical-align: middle;
+        }
+        .content {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+            width: 100%;
+            .title {
+                color: #ffffff;
+                font-weight: 700;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}
+
+//Join Creed Section
+.join-creed-section {
+    position: relative; 
+    text-align: center;
+    padding-top: 50px;
+    }
+    .subscription-news {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-    }
-    img {
-        transition: transform 0.5s;
-        width: 100%;
-        height: auto;
-        &:hover {
-            transform: scale(1.1);
+        h1 {
+            font-family: Mechfire;
+            font-size: 60px;
+            color: #ffffff;
+            text-transform: uppercase;
+            @media (max-width: $screen-medium) {
+                font-size: 24px;
+            }
         }
-    }
+        .form {
+            margin: 0;
+        }
+        .form-field {
+            margin-bottom: 0;
+        }
 }

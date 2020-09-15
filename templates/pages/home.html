@@ -25,19 +25,21 @@ blog:
         {{> components/common/alert/alert-info message}}
     {{/each}}
 
-<div class="main full">
+    <div class="main full">
 
-    {{> components/common/sections/category-section}}
-    
-    {{#if products.featured}}
-        {{> components/products/featured products=products.featured columns=theme_settings.homepage_featured_products_column_count}}
-    {{/if}}
-    {{{region name="home_below_featured_products"}}}
+        {{> components/common/sections/category-section}}
+        
+        {{#if products.featured}}
+            {{> components/products/featured products=products.featured columns=theme_settings.homepage_featured_products_column_count}}
+        {{/if}}
+        {{{region name="home_below_featured_products"}}}
 
-    {{#if products.new}}
-        {{> components/products/new products=products.new columns=theme_settings.homepage_new_products_column_count}}
-    {{/if}}
-    {{{region name="home_below_new_products"}}}
-</div>
+        {{#if products.new}}
+            {{> components/products/new products=products.new columns=theme_settings.homepage_new_products_column_count}}
+        {{/if}}
+
+    </div>
+
 {{/partial}}
+
 {{> layout/base}}
