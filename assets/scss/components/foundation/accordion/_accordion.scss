@@ -76,7 +76,7 @@
         font-weight: normal;
         padding: $accordion-navList-padding;
         text-decoration: none;
-        text-transform: inherit;
+        text-transform: uppercase;
 
         @include breakpoint("medium") {
             margin-bottom: spacing("half");

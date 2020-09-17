@@ -65,6 +65,7 @@ $info-color:                    null;
 // We use these to control text direction settings
 $text-direction:                ltr;
 $default-float:                 left;
+$default-right:                 right;
 $opposite-direction:            right;
 @if $text-direction == ltr {
     $default-float:             left;

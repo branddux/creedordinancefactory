@@ -49,6 +49,7 @@
         border-color: $pagination-link-current-borderColor;
         border-radius: $pagination-link-current-borderRadius;
         margin: $pagination-link-current-margin;
+        border: 2px solid;
     }
 
     &.pagination-item--previous, // 1
@@ -80,7 +81,7 @@
 }
 
 .pagination-item--previous {
-    float: left;
+    // float: left;
 
     .icon {
         margin-left: -(remCalc(12px));
@@ -88,7 +89,7 @@
 }
 
 .pagination-item--next {
-    float: right;
+    // float: right;
 
     .icon {
         margin-right: -(remCalc(12px));

@@ -40,7 +40,7 @@ $include-html-nav-classes:          $include-html-classes;
 $crumb-bg:                          null;
 
 // We use these to set the padding around the breadcrumbs.
-$crumb-padding:                     null;
+$crumb-padding:                     0px;
 $crumb-side-padding:                null;
 
 // We use these to control border styles.
@@ -51,7 +51,7 @@ $crumb-border-color:                null;
 $crumb-radius:                      null;
 
 // We use these to set various text styles for breadcrumbs.
-$crumb-font-size:                   fontSize("smallest");
+$crumb-font-size:                   14px;
 $crumb-font-color:                  stencilColor("color-textSecondary");
 $crumb-font-color-current:          stencilColor("color-textSecondary");
 $crumb-font-color-unavailable:      color("greys", "light");

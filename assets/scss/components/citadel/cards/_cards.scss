@@ -28,13 +28,13 @@
 .card-figure {
     margin-top: $card-figure-marginTop;
     position: relative;
-    // &:hover {
+    &:hover {
 
-    //     // scss-lint:disable NestingDepth
-    //     .card-figcaption {
-    //         opacity: 1;
-    //     }
-    // }
+        // scss-lint:disable NestingDepth
+        .card-figcaption {
+            opacity: 0;
+        }
+    }
 }
 
 .card-img-container {
@@ -47,7 +47,9 @@
     display: none;
     margin: $card-figcaption-margin;
     pointer-events: none; // 1
-
+    &:hover {
+        opacity: 0;
+    }
     @include breakpoint("medium") {
         display: block;
     }
@@ -111,10 +113,6 @@
 
 .card-body {
     text-align: center;
-
-    @include breakpoint("small") {
-        text-align: left;
-    }
 }
 
 
