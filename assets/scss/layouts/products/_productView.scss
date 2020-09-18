@@ -63,11 +63,16 @@
 
 .productView-description {
     @include grid-column(12);
-    padding-left: spacing("base");
-    padding-right: spacing("base");
     position: relative;
     z-index: 1;
-
+    padding: 0;
+    margin-bottom: 15px;
+    @media (max-width: $screen-medium) {
+        text-align: center;
+    }
+    p {
+        margin-bottom: 0;
+    }
     .productView-title {
         border-bottom: container("border");
         margin-bottom: spacing("base");
