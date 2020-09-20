@@ -5,7 +5,9 @@
   "customLayouts": {
     "brand": {},
     "category": {},
-    "page": {},
+    "page": {
+      "about.html": "/about/"
+    },
     "product": {}
   }
 }

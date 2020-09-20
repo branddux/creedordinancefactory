@@ -6,6 +6,12 @@
 // Product view layout
 // -----------------------------------------------------------------------------
 
+.productView-page {
+    padding: 50px 0;
+    .breadcrumbs {
+        margin-bottom: 30px;
+    }
+}
 .productView {
     @include grid-row($behavior: "nest");
     margin-left: -(spacing("base"));

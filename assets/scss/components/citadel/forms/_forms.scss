@@ -134,7 +134,9 @@
 
 .form-label--alternate {
     font-family: fontFamily("headingSans");
-    font-size: fontSize("smallest");
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
     margin-bottom: spacing("half");
 }
 

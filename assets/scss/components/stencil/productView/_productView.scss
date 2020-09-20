@@ -42,7 +42,7 @@
 .productView-img-container {
     position: relative;
     margin: auto;
-    max-width: get-width(stencilString('product_size'));
+    max-width: 400px;
     width: 100%;
 
     img {
@@ -93,7 +93,7 @@
     padding-left: spacing("quarter");
     padding-right: spacing("quarter");
     text-align: center;
-
+    width: 20%;
     @include breakpoint("large") {
         width: 20%;
     }
@@ -179,6 +179,11 @@
 .productView-price {
     font-size: fontSize("smaller");
     margin-bottom: spacing("third");
+    
+    @media (max-width: $screen-medium) {
+        text-align: center;
+        font-size: 21px;
+    }
 
     @include breakpoint("medium") {
         font-size: fontSize("larger");
@@ -337,11 +342,6 @@
             float: none;
             padding: 0;
             width: auto;
-        }
-
-        @include breakpoint("large") {
-            display: inline-block;
-            margin-top: 1rem;
         }
 
         // scss-lint:disable SelectorDepth, NestingDepth
