@@ -99,8 +99,9 @@
 
 .footer-info-heading {
     color: #ffffff;
-    font-size: fontSize("base");
-    text-transform: inherit;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 .footer-info-list {
@@ -121,20 +122,21 @@
 
 .footer-copyright {
     text-align: center;
-
+    color: #ffffff;
+    text-transform: uppercase;
     @include breakpoint("small") {
         text-align: left;
     }
 
     > .powered-by {
-        color: stencilColor("color-textSecondary");
+        color: #ffffff;
         font-size: fontSize("tiny");
         margin: 0;
         text-align: center;
     }
 
     a {
-        color: stencilColor("color-textSecondary");
+        color: #ffffff;
         text-decoration: none;
 
         // scss-lint:disable NestingDepth

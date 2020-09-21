@@ -43,6 +43,7 @@
 .join-creed-section {
     position: relative; 
     text-align: center;
+    max-height: 600px;
     }
     .subscription-news {
         position: absolute;
@@ -52,6 +53,7 @@
         h1 {
             font-family: Mechfire;
             font-size: 60px;
+            margin-bottom: 20px;
             color: #ffffff;
             text-transform: uppercase;
             @media (max-width: $screen-medium) {
@@ -64,4 +66,55 @@
         .form-field {
             margin-bottom: 0;
         }
+}
+
+//About Section
+.about-title {
+    margin: 0;
+    padding: 50px 0;
+}
+
+.about-section {
+    background-image: url('/assets/img/bg/COF_Section1_ContactP_v.01_background.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+    @media (max-width: $screen-medium) {
+        padding: 50px 0;
+    }
+    .row {
+        max-width: 80%;
+    }
+    .about-content {
+        background-color: #000000;
+        padding: 60px 40px;
+        @media (max-width: $screen-medium) {
+            padding: 40px;
+        }
+        h2 {
+            color: #ffffff;
+            font-family: Mechfire;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #ffffff;
+            font-weight: 700;
+            margin: 0;
+            padding: 0;
+            text-transform: uppercase;
+            @media (max-width: $screen-medium) {
+                text-align: center;
+            }
+        }
+    }
+    .img-content {
+        text-align: center;
+        img {
+            width: 50%;
+            margin: 0;
+        }
+    }
 }
