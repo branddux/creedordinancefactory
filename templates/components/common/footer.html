@@ -51,9 +51,11 @@
                 <h3 class="footer-info-heading">{{lang 'footer.categories'}}</h3>
                 <ul class="footer-info-list">
                     {{#each categories}}
-                        <li>
-                            <a href="{{url}}">{{name}}</a>
-                        </li>
+                        {{#if name '===' 'ammunitions'}}
+                            <li>
+                                <a href="{{url}}">{{name}}</a>
+                            </li>
+                        {{/if}}
                     {{/each}}
                 </ul>
             </article>

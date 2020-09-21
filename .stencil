@@ -6,7 +6,8 @@
     "brand": {},
     "category": {},
     "page": {
-      "about.html": "/about/"
+      "about.html": "/about/",
+      "coming-soon.html": "/coming-soon/"
     },
     "product": {}
   }

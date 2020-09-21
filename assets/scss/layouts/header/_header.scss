@@ -83,7 +83,7 @@
         margin: 0 auto;
         position: relative;
         text-decoration: none;
-        width: 70%;
+        width: 100%;
         z-index: zIndex("low");
 
         // scss-lint:disable NestingDepth
@@ -106,8 +106,8 @@
 }
 
 .header-logo--left {
-    text-align: left;
-
+    display: inline-block;
+    float: left;
     @include breakpoint("medium") {
         margin-left: remCalc(40px);
     }
@@ -175,6 +175,7 @@
 }
 
 .header-logo-image {
+    position: relative;
     @include lazy-loaded-img;
     max-height: remCalc($header-height) - $header-logo-marginVertical * 2;
 
