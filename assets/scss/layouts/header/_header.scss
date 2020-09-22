@@ -37,7 +37,6 @@
     width: 100%;
     z-index: zIndex("higher");
     
-
     @include breakpoint("medium") {
         overflow: visible;
         position: relative;
@@ -106,11 +105,6 @@
 }
 
 .header-logo--left {
-    display: inline-block;
-    float: left;
-    @include breakpoint("medium") {
-        margin-left: remCalc(40px);
-    }
 
     .header-logo-image {
         right: unset;

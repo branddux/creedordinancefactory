@@ -41,9 +41,12 @@
 
 //Join Creed Section
 .join-creed-section {
-    position: relative; 
-    text-align: center;
-    max-height: 600px;
+    background: url('/assets/img/bullets/join-the-creed-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    height: 500px;
+    position: relative;
     }
     .subscription-news {
         position: absolute;
@@ -52,16 +55,21 @@
         transform: translate(-50%, -50%);
         h1 {
             font-family: Mechfire;
-            font-size: 60px;
+            font-size: 40px;
             margin-bottom: 20px;
             color: #ffffff;
             text-transform: uppercase;
             @media (max-width: $screen-medium) {
                 font-size: 24px;
+                text-align: center;
             }
         }
         .form {
             margin: 0;
+        }
+        .footer-info-heading {
+            text-align: center;
+            font-size: 18px;
         }
         .form-field {
             margin-bottom: 0;

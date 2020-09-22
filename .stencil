@@ -1,5 +1,5 @@
 {
-  "normalStoreUrl": "https://branddux-sandbox.mybigcommerce.com",
+  "normalStoreUrl": "https://creedbrand.com",
   "accessToken": "pl8ii30x4xkt9xwrongjkm9ujotxsz",
   "port": 3000,
   "customLayouts": {
@@ -7,7 +7,7 @@
     "category": {},
     "page": {
       "about.html": "/about/",
-      "coming-soon.html": "/coming-soon/"
+      "landing.html": "/landing/"
     },
     "product": {}
   }

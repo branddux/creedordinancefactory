@@ -41,18 +41,19 @@
     bottom: 0;
     display: none;
     height: 100%;
-    left: 0;
     -webkit-overflow-scrolling: touch;
     position: absolute;
     right: 0;
     z-index: zIndex("lower");
+    top: 35px;
 
     @include breakpoint("medium") {
         background: #000000;
         display: block;
         height: auto;
         padding: 0;
-        position: relative;
+        position: absolute;
+        float: right;
     }
 
     &.is-open {
@@ -67,9 +68,7 @@
 // -----------------------------------------------------------------------------
 
 .navPages {
-    background-color: #000000;
-    height: 100%;
-    overflow-y: auto;
+    background-color: #fcfcfc;
     padding: spacing("single");
 
     @include breakpoint("medium") {
