@@ -42,7 +42,7 @@
     display: none;
     height: 100%;
     -webkit-overflow-scrolling: touch;
-    position: absolute;
+    
     right: 0;
     z-index: zIndex("lower");
     top: 35px;
@@ -52,13 +52,10 @@
         display: block;
         height: auto;
         padding: 0;
-        position: absolute;
-        float: right;
     }
 
     &.is-open {
         display: block;
-        padding-top: $header-height;
         z-index: 0;
     }
 }
@@ -83,6 +80,19 @@
 
     ul {
         list-style: none;
+    }
+
+    .navPages-item {
+        padding: 10px 10px;
+        a {
+            color: white;
+            font-weight: 700;
+            text-decoration: none;
+            text-transform: uppercase;
+            @media (max-width: $screen-medium) {
+                color: #000000;
+            }
+        }
     }
 
     .navPage-subMenu-list {
@@ -191,7 +201,9 @@
     padding: spacing("half") 0;
     text-decoration: none;
     text-transform: uppercase;
-
+    @media (max-width: $screen-medium) {
+        color: #000000;
+    }
     &.has-subMenu {
         .navPages-list:not(.navPages-list-depth-max) & {
             display: flex;

@@ -424,6 +424,9 @@
     margin-bottom: 15px;
     @media (max-width: $screen-medium) {
         margin: auto;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
     }
     dt {
         display: inline;

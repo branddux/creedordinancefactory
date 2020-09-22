@@ -3,16 +3,31 @@
         {{> components/common/quick-search name='nav-menu-quick-search'}}
     </div>
     <ul class="navPages-list{{#if theme_settings.navigation_design '!==' 'simple'}} navPages-list-depth-max{{/if}}">
-        {{#each categories}}
+        
             <li class="navPages-item">
-            {{#if ../theme_settings.navigation_design '===' 'simple'}}
-                {{> components/common/navigation-list}}
-            {{/if}}
-            {{#if ../theme_settings.navigation_design '===' 'alternate'}}
-                {{> components/common/navigation-list-alternate}}
-            {{/if}}
+                <a href="/pistol/">Pistol</a>
             </li>
-        {{/each}}
+
+            <li class="navPages-item">
+                <a href="/rifle/">Rifle</a>
+            </li>
+            
+            <li class="navPages-item">
+                <a href="/flagship/">Flagship</a>
+            </li>
+            
+            <li class="navPages-item">
+                <a href="/patriot-freedom/">Patriot Freedom</a>
+            </li>
+            
+            <li class="navPages-item">
+                <a href="/about/">About</a>
+            </li>
+
+            <li class="navPages-item">
+                <a href="/contact-us/">Contact</a>
+            </li>
+
         {{#unless theme_settings.hide_content_navigation}}
             {{#each pages}}
                  <li class="navPages-item navPages-item-page">

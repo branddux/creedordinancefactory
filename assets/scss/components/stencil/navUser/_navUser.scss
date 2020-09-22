@@ -70,7 +70,7 @@
 }
 
 .navUser-action {
-    color: stencilColor("navUser-color");
+    color: #ffffff;
     font-weight: fontWeight("bold");
     padding: spacing("base") spacing("half");
     text-decoration: none;
@@ -167,7 +167,7 @@
     }
 
     .navUser-action {
-        color: stencilColor("navUser-color");
+        color: #ffffff;
 
         // scss-lint:disable NestingDepth
         &:hover,
@@ -211,7 +211,6 @@
 }
 
 .navUser-item-cartLabel {
-    display: none;
 
     @include breakpoint("small") {
         display: inline;
@@ -242,7 +241,7 @@
 }
 
 .navUser-or {
-    color: stencilColor("navUser-color");
+    color: #ffffff;
     cursor: default;
     display: inline-block;
     margin: 0 remCalc(-12px);
@@ -349,4 +348,10 @@
 .countPill--alt {
     background-color: color("greys", "lighter");
     color: color("greys", "darker");
+}
+
+.navUser-section--alt {
+    @media (max-width: $screen-medium) {
+        float: left;
+    }
 }

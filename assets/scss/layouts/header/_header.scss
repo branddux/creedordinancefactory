@@ -55,14 +55,15 @@
 .header-logo {
     font-size: 0;   // 1
     text-align: center;
-    
-
-    @include breakpoint("small") { // 4
-        padding: 10px 0;
+    max-width: 50%;
+    margin: auto;
+    @media (max-width: $screen-medium) {
+        padding: 12px 0;
+        max-width: 50%;
+        margin: auto;
     }
 
     @include breakpoint("medium") {
-
         .header.fixed & {
             background-color: color("greys", "lightest");
             margin: 0;

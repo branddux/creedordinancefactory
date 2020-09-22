@@ -31,32 +31,49 @@
         {{/if}}
         <section class="footer-info">
             <article class="footer-info-col footer-info-col--small" data-section-type="footer-webPages">
-                <img class="lazyload" src={{cdn '/assets/img/logos/COF_White_Logo_v.01.png'}}>
+                <img class="lazyload" src={{cdn '/assets/img/logos/testing.png'}}>
             </article>
             <article class="footer-info-col footer-info-col--small" data-section-type="footer-webPages">
-                <h3 class="footer-info-heading">{{lang 'footer.navigate'}}</h3>
+                <h3 class="footer-info-heading">{{lang 'footer.categories'}}</h3>
                 <ul class="footer-info-list">
-                    {{#each pages}}
+                    {{#each categories}}
                         <li>
                             <a href="{{url}}">{{name}}</a>
                         </li>
                     {{/each}}
+                </ul>
+            </article>
+
+            <article class="footer-info-col footer-info-col--small" data-section-type="footer-categories">
+                <h3 class="footer-info-heading">{{lang 'footer.company'}}</h3>
+                <ul class="footer-info-list">
                     <li>
-                        <a href="{{urls.sitemap}}">{{lang 'sitemap.page_title'}}</a>
+                        <a href="/about">About</a>
+                    </li>
+                    <li>
+                        <a href="/contact-us">Contact</a>
                     </li>
                 </ul>
             </article>
 
             <article class="footer-info-col footer-info-col--small" data-section-type="footer-categories">
-                <h3 class="footer-info-heading">{{lang 'footer.categories'}}</h3>
+                <h3 class="footer-info-heading">{{lang 'footer.support'}}</h3>
                 <ul class="footer-info-list">
-                    {{#each categories}}
-                        {{#if name '===' 'ammunitions'}}
-                            <li>
-                                <a href="{{url}}">{{name}}</a>
-                            </li>
-                        {{/if}}
-                    {{/each}}
+                    <li>
+                        <a href="/faqs/">FAQS</a>
+                    </li>
+                    <li>
+                        <a href="/privacy-policy/">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="/terms-conditions/">Terms & Conditions</a>
+                    </li>
+                    <li>
+                        <a href="/warranty">Warranty</a>
+                    </li>
+                    <li>
+                        <a href="/shipping-returns/">Shipping & Returns</a>
+                    </li>
                 </ul>
             </article>
 

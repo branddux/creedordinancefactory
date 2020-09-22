@@ -10,29 +10,26 @@
 </div>
 {{/if}}
 <header class="header" role="banner">
-    <a href="#" class="mobileMenu-toggle" data-mobile-menu-toggle="menu">
-        <span class="mobileMenu-toggleIcon">Toggle menu</span>
-    </a>
-    <div class="header-menu">
-        <div class="row">
-            <div class="medium-4 columns">
-                {{#if page_type '===' 'default'}}
-                    <div class="header-logo header-logo--{{theme_settings.logo-position}}">
-                        {{> components/common/store-logo}}
-                    </div>
-                {{else}}
-                    <div class="header-logo header-logo--{{theme_settings.logo-position}}">
-                        {{> components/common/store-logo}}
-                    </div>
-                {{/if}}
-            </div>
-            <div class="medium-8 columns">
-                <div class="navPages-container" id="menu" data-menu>
-                    {{> components/common/navigation-menu}}
-                </div>
-            </div>
-        </div>
-    </div>
     
+        <a href="#" class="mobileMenu-toggle" data-mobile-menu-toggle="menu">
+            <span class="mobileMenu-toggleIcon">Toggle menu</span>
+        </a>
+        
+        {{#if page_type '===' 'default'}}
+            <div class="header-logo header-logo--{{theme_settings.logo-position}}">
+                {{> components/common/store-logo}}
+            </div>
+        {{else}}
+            <div class="header-logo header-logo--{{theme_settings.logo-position}}">
+                {{> components/common/store-logo}}
+            </div>
+        {{/if}}
+    
+        <div class="navPages-container" id="menu" data-menu>
+            {{> components/common/navigation-menu}}
+        </div>
+        
+        {{> components/common/navigation}}
+            
 </header>
 {{{region name="header_bottom"}}}

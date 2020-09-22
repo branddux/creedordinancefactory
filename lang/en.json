@@ -6,10 +6,13 @@
     "footer": {
         "title": "Footer Start",
         "brands": "Popular Brands",
-        "navigate": "Navigate",
+        "navigate": "Information",
         "info": "Info",
         "categories": "Categories",
-        "call_us": "Call us at {phone_number}"
+        "call_us": "Call us at {phone_number}",
+        "contact": "Contact",
+        "company": "Company",
+        "support": "Support"
     },
     "home": {
         "heading": "Home"

@@ -20,7 +20,7 @@
 }
 
 .optimizedCheckout-header {
-    background-color: stencilColor("optimizedCheckout-header-backgroundColor");
+    background-color: #000000;
     // scss-lint:disable StringQuotes
     background-image: url(stencilImage('optimizedCheckout-backgroundImage', 'optimizedCheckout-backgroundImage-size'));
     // scss-lint:enable StringQuotes
@@ -33,7 +33,7 @@
     // Configure media query to be 'desktop' breakpoint size
     // -----------------------------------------------------------------------------
     @media (min-width: 801px) {
-        text-align: stencilString("optimizedCheckout-logo-position");
+        text-align: center
     }
 }
 
