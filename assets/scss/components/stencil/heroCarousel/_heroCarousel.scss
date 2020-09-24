@@ -25,10 +25,6 @@
         visibility: visible;
     }
 
-    @include breakpoint("medium") {
-        margin-top: -(spacing("single") + spacing("base")); // 3
-    }
-
     &.slick-initialized {
         opacity: 1;
         max-height: 100vh;
@@ -55,6 +51,9 @@
         top: 50%;
         transform: translateY(-50%);
         margin: 0;
+        @media (max-width: $screen-small) {
+            top: 35%;
+        }
     }
 
     .slick-next {
@@ -127,19 +126,9 @@
     }
 
     .heroCarousel-image-wrapper {
-        height: remCalc(250px);
         display: flex;
         justify-content: center;
         align-items: flex-start;
-        height: 56.25vw;
-
-        @include breakpoint("small") {
-            max-height: remCalc(400px);
-        }
-
-        @include breakpoint("medium") {
-            max-height: remCalc(600px);
-        }
     }
 
     &.is-square-image-type {

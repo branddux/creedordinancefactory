@@ -1,64 +1,72 @@
 <!DOCTYPE html>
 <html class="no-js" lang="{{ locale_name }}">
-    <head>
-        <title>{{ head.title }}</title>
-        {{{ resourceHints }}}
-        {{{ head.meta_tags }}}
-        {{{ head.config }}}
-        {{#block "head"}} {{/block}}
 
-        <link href="{{ head.favicon }}" rel="shortcut icon">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<head>
+    <title>{{ head.title }}</title>
+    {{{ resourceHints }}}
+    {{{ head.meta_tags }}}
+    {{{ head.config }}}
+    {{#block "head"}} {{/block}}
 
-        <script>
-            {{!-- Change document class from no-js to js so we can detect this in css --}}
-            document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
-        </script>
+    <link href="{{ head.favicon }}" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-        {{> components/common/polyfill-script }}
+    <script>
+        { { !--Change document class from no - js to js so we can detect this in css-- } }
+        document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    </script>
 
-        {{!-- Load Lazysizes script ASAP so images will appear --}}
-        <script>
-            {{!-- Only load visible elements until the onload event fires, after which preload nearby elements. --}}
-            window.lazySizesConfig = window.lazySizesConfig || {};
-            window.lazySizesConfig.loadMode = 1;
-        </script>
-        <script async src="{{cdn 'assets/dist/theme-bundle.head_async.js'}}"></script>
+    {{> components/common/polyfill-script }}
 
-        {{ getFontsCollection }}
-        {{{stylesheet '/assets/css/theme.css'}}}
-        <style type="text/css" media="sreen, print">
-            @font-face {
-                font-family: "Mechfire";
-                src: url('{{cdn 'fonts/Mechfire.otf'}}')
-            };
-        </style>
-        {{{head.scripts}}}
+    {{!-- Load Lazysizes script ASAP so images will appear --}}
+    <script>
+        { { !--Only load visible elements until the onload event fires, after which preload nearby elements. -- } }
+        window.lazySizesConfig = window.lazySizesConfig || {};
+        window.lazySizesConfig.loadMode = 1;
+    </script>
+    <script async src="{{cdn 'assets/dist/theme-bundle.head_async.js'}}"></script>
 
-        {{~inject 'showAdminBar' theme_settings.show-admin-bar}}
-        {{~inject 'genericError' (lang 'common.generic_error')}}
-        {{~inject 'maintenanceModeSettings' settings.maintenance}}
-        {{~inject 'adminBarLanguage' (langJson 'admin')}}
-        {{~inject 'urls' urls}}
-        {{~inject 'secureBaseUrl' settings.secure_base_url}}
-        {{~inject 'cartId' cart_id}}
-        {{~inject 'channelId' settings.channel_id}}
-        {{~inject 'template' template}}
-    </head>
-    <body>
-        <svg data-src="{{cdn 'img/icon-sprite.svg'}}" class="icons-svg-sprite"></svg>
+    {{ getFontsCollection }}
+    {{{stylesheet '/assets/css/theme.css'}}}
+    
+    <style type="text/css" media="screen, print">
+        @font-face {
+            font-family: "Mechfire";
+            src: url("{{cdn 'fonts/134786dfefeb23953361f3f2bf2e5f86.eot'}}"); /* IE9 Compat Modes */
+            src: url("{{cdn 'fonts/134786dfefeb23953361f3f2bf2e5f86.woff2'}}"), /* Super Modern Browsers */
+                 url("{{cdn 'fonts/134786dfefeb23953361f3f2bf2e5f86.woff'}}"), /* Pretty Modern Browsers */
+                 url("{{cdn 'fonts/134786dfefeb23953361f3f2bf2e5f86.svg'}}"); /* Legacy iOS */
+    };
+    </style>
 
-        {{> components/common/header }}
-        {{> components/common/body }}
-        {{> components/common/footer }}
+    {{{head.scripts}}}
 
-        <script>window.__webpack_public_path__ = "{{cdn 'assets/dist/'}}";</script>
-        <script src="{{cdn 'assets/dist/theme-bundle.main.js'}}"></script>
-        <script>
-            {{!-- Exported in app.js --}}
-            window.stencilBootstrap("{{page_type}}", {{jsContext}}).load();
-        </script>
+    {{~inject 'showAdminBar' theme_settings.show-admin-bar}}
+    {{~inject 'genericError' (lang 'common.generic_error')}}
+    {{~inject 'maintenanceModeSettings' settings.maintenance}}
+    {{~inject 'adminBarLanguage' (langJson 'admin')}}
+    {{~inject 'urls' urls}}
+    {{~inject 'secureBaseUrl' settings.secure_base_url}}
+    {{~inject 'cartId' cart_id}}
+    {{~inject 'channelId' settings.channel_id}}
+    {{~inject 'template' template}}
+</head>
 
-        {{{footer.scripts}}}
-    </body>
+<body>
+    <svg data-src="{{cdn 'img/icon-sprite.svg'}}" class="icons-svg-sprite"></svg>
+
+    {{> components/common/header }}
+    {{> components/common/body }}
+    {{> components/common/footer }}
+
+    <script>window.__webpack_public_path__ = "{{cdn 'assets/dist/'}}";</script>
+    <script src="{{cdn 'assets/dist/theme-bundle.main.js'}}"></script>
+    <script>
+        { { !--Exported in app.js-- } }
+        window.stencilBootstrap("{{page_type}}", {{ jsContext }}).load();
+    </script>
+
+    {{{footer.scripts}}}
+</body>
+
 </html>
