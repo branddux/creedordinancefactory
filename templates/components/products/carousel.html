@@ -25,15 +25,15 @@
             }
         ]
     }'>
-    {{#if products.length '>' 1}}
+    <!-- {{#if products.length '>' 1}}
     <button aria-label="{{lang 'carousel.arrowAriaLabel'}} {{products.length}}" class="js-product-prev-arrow slick-prev slick-arrow"></button>
-    {{/if}}
+    {{/if}} -->
     {{#each products}}
     <div class="productCarousel-slide js-product-slide">
         {{> components/products/card settings=../settings theme_settings=../theme_settings customer=../customer event="list" position=(add @index 1)}}
     </div>
     {{/each}}
-    {{#if products.length '>' 1}}
+    <!-- {{#if products.length '>' 1}}
     <button aria-label="{{lang 'carousel.arrowAriaLabel'}} {{products.length}}" class="js-product-next-arrow slick-next slick-arrow"></button>
-    {{/if}}
+    {{/if}} -->
 </section>

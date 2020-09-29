@@ -14,6 +14,10 @@
     @include grid-row(
         $behavior: nest
     );
+
+    .slick-list {
+        margin-bottom: 25px;
+    }
 }
 
 .productCarousel-slide { // 1
