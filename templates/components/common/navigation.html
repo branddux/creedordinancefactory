@@ -53,13 +53,13 @@
             </a>
             {{else}}
             <a class="navUser-action" href="{{urls.auth.login}}" aria-label="{{lang 'common.login'}}">
-                {{lang 'common.login'}}
+                {{lang 'common.account'}}
             </a>
-            {{#if settings.account_creation_enabled}}
+            <!-- {{#if settings.account_creation_enabled}}
             <span class="navUser-or">{{lang 'common.or'}}</span>
             <a class="navUser-action" href="{{urls.auth.create_account}}" aria-label="{{lang 'common.sign_up'}}">
                 {{lang 'common.sign_up'}}
-            </a>
+            </a> -->
             {{/if}}
             {{/if}}
         </li>
