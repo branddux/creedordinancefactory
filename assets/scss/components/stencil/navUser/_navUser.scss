@@ -82,20 +82,19 @@
 
         // scss-lint:disable NestingDepth
         svg {
-            fill: stencilColor("navUser-color-hover");
-            stroke: stencilColor("navUser-color-hover");
+            fill: #ffffff;
         }
         // scss-lint:enable NestingDepth
     }
 
     .icon {
-        @include square(8px);
+        width: 25px;
+        height: 25px;
         margin: -1px 0 0 spacing("eighth");
     }
 
     svg {
-        fill: stencilColor("navUser-color");
-        stroke: stencilColor("navUser-color");
+        fill: #ffffff;
         transition: all 0.15s ease;
     }
 }
@@ -354,4 +353,8 @@
     @media (max-width: $screen-medium) {
         float: left;
     }
+}
+
+.navUser-item--social .socialLinks .icon svg {
+    fill: #ffffff;
 }
