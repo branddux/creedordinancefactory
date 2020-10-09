@@ -30,6 +30,50 @@
 .footer-info {
     @include grid-row($behavior: nest);
     font-size: 0; // 1
+    margin-bottom: 25px;
+    article {
+        display: block;
+        text-align: center;
+        @media (max-width: $screen-small) {
+            text-align: center;
+        }
+        .hashtag-title {
+            text-transform: uppercase;
+            color: #ffffff;
+            font-weight: 700;
+            text-align: center;
+        }
+    }
+    .creed-logo {
+        display: block;
+        margin: auto;
+        padding-bottom: 10px;
+    }
+    .social-box {
+        max-width: 300px;
+        padding-bottom: 10px;
+        @media (max-width: $screen-small) {
+            margin: auto;
+        }
+    }
+    .img-column {
+        padding: 0;
+    }
+    .image-box {
+        background-color: #ffffff;
+        padding: 5px;
+        max-width: 40px;
+        height: 40px;
+        display: block;
+        margin: auto;
+        position: relative;
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
 }
 
 .footer-info-col {
@@ -45,12 +89,12 @@
     -ms-word-break: break-all;
     overflow-wrap: break-word;
     @include breakpoint("small") {
-        text-align: left;
-        width: width("6/12");
+        text-align: center;
+        width: width("12/12");
     }
 
     @include breakpoint("medium") {
-        width: width("4/12");
+        width: width("3/12");
     }
 
     > :first-child {
